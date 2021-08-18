@@ -8,9 +8,15 @@
 </head>
 <body>
     <?php
-        if(isset($_POST['acao'])){
-            echo $_POST['num1']+$_POST['num2'];
+
+        if(isset($_GET['acao'])){
+            echo $_GET['num1'];
+            echo $_GET['num2'];
         }
+
+        /* if(isset($_POST['acao'])){
+            echo $_POST['num1'] + $_POST['num2']; ---> method="POST" on <form>
+        } */
         
     ?>
     <form>
